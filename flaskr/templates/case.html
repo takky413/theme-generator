@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ケース面接</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='nextpage.css')}}">
+    </head>
+    <body>
+        <h1 class="title">ケース面接</h1>
+        <div class = "contents">
+            <img src = "{{ url_for('static', filename='case.svg')}}" width = 300px height = 300px>
+            <h2>{{ theme }}</h2>
+            <table>
+                <tr>
+                    <td>
+                        <form action="{{ url_for('reload_case') }}" method="get">
+                            <input type="submit" value="変更">
+                        </form>
+                    </td>
+                    <td>
+                        <form action="{{ url_for('back') }}" method="get">
+                            <input type="submit" value="戻る">
+                        </form>
+                    </td>
+            </table>
+        </div>
+    </body>
+</html>

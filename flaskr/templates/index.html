@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>テーマ自動生成システム</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <h1 class="title">テーマ自動生成システム</h1>
+        <div class="contents">
+            <h3 class="section-title">ジャンルを選択してください</h3>
+            <div class="contents-item">
+              <a href = "{{ url_for('interview') }}">
+                <img class="interview" src="{{ url_for('static', filename='interview.svg')}}" width = 300px height = 300px>
+              </a>
+              <div class="interview-str">
+                <p class="item">人物面接</p>
+              </div>
+            </div>
+            <div class="contents-item">
+              <a href = "{{ url_for('group_discussion') }}">
+                <img class="group_discussion" src="{{ url_for('static', filename='group_discussion.svg')}}" width = 300px height = 300px>
+              </a>
+              <p class="item">グループディスカッション</p>
+            </div>
+            <div class="contents-item">
+              <a href = "{{ url_for('case') }}">
+                <img class="case" src="{{ url_for('static', filename='case.svg')}}" width = 300px height = 300px>
+              </a>
+              <p class="item">ケース面接</p>
+            </div>
+            <div class="contents-item">
+              <a href = "{{ url_for('fermi') }}">
+                <img class="fermi" src="{{ url_for('static', filename='fermi.svg')}}" width = 300px height = 300px>
+              </a>
+              <p class="item">フェルミ推定</p>
+            </div>
+          </div>
+    </body>
+</html>

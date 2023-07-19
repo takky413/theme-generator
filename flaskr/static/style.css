@@ -1,0 +1,64 @@
+.title {
+    font-size: 70px;
+    text-align: center;
+}
+
+.contents {
+    height: 500px;
+    margin-top: 100px;
+}
+
+.contents-item {
+    float: left;
+    margin-right: 40px;
+}
+
+.item {
+    text-align: center;
+    font-size: 25px;
+}
+
+.section-title {
+    border-bottom: 2px solid #dee7ec;
+    font-size: 28px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.interview {
+    border: 5px solid #00bfa6;
+    margin-left: 65px;
+}
+
+.interview-str {
+    margin-left: 65px;
+}
+
+.interview:hover {
+    background-color: #a5fff3;
+}
+
+.group_discussion {
+    border: 5px solid #536dfe;
+}
+
+.group_discussion:hover {
+    background-color: #a0aeff;
+}
+
+.case {
+    border: 5px solid #f50057;
+}
+
+.case:hover {
+    background-color: #ff91b7;
+}
+
+.fermi {
+    border: 5px solid #f9a826;
+}
+
+.fermi:hover {
+    background-color: #ffcf81;
+}
